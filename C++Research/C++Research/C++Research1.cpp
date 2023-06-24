@@ -11,11 +11,16 @@ void Value(int value)
     value = 10;  // local copy
 }
 
-void Reference(int& value) {
+void Reference(int& value) 
+{
     value = 10;  // reference type
 }
 
-
+void func() 
+{
+    int* ptr = new int(5);  // memory allocation
+    // without delete to free memory
+}
 
 
 
@@ -39,7 +44,8 @@ int main() {
     Reference(y);
     std::cout << "Reference type: " << y << std::endl; // Reference type 
 
-   
+    
+    func();
 
     
     return 0;
