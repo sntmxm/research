@@ -1,5 +1,0 @@
-﻿  test.cpp
-D:\c++_research\research\C++Research\C++Research\C++Research1.cpp(31,13): warning C4101: objStack: неиспользованная локальная переменная
-D:\c++_research\research\C++Research\ResearchTests\test.cpp(37,13): warning C4101: objStack: неиспользованная локальная переменная
-D:\c++_research\research\C++Research\ResearchTests\test.cpp(50,5): error C2731: main: функция не может быть перегружена
-D:\c++_research\research\C++Research\ResearchTests\test.cpp(50,5): message : см. объявление "main"
