@@ -29,20 +29,20 @@ TEST(MyTestCase, ReferenceFunctionTest) {
 
 TEST(MyTestCase, MemoryLeakTest) {
     
-    SUCCEED();
+    
 }
 
 
 TEST_F(MyTestFixture, MyClassStackTest) {
     MyClass objStack;
     
-    ASSERT_TRUE(true); 
+    
 }
 
 TEST_F(MyTestFixture, MyClassHeapTest) {
     MyClass* objHeap = new MyClass();
     
-    ASSERT_TRUE(true); 
+    
 
     delete objHeap; 
 }
