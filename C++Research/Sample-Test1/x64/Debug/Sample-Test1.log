@@ -1,5 +1,6 @@
-﻿  test.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (Sample-Test1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  test.cpp
 D:\c++_research\research\C++Research\C++Research\C++Research1.cpp(31,13): warning C4101: objStack: неиспользованная локальная переменная
-D:\c++_research\research\C++Research\Sample-Test1\test.cpp(37,13): warning C4101: objStack: неиспользованная локальная переменная
-D:\c++_research\research\C++Research\Sample-Test1\test.cpp(50,5): error C2731: main: функция не может быть перегружена
-D:\c++_research\research\C++Research\Sample-Test1\test.cpp(50,5): message : см. объявление "main"
+D:\c++_research\research\C++Research\Sample-Test1\test.cpp(45,13): warning C4101: objStack: неиспользованная локальная переменная
+D:\c++_research\research\C++Research\Sample-Test1\test.cpp(58,5): error C2731: main: функция не может быть перегружена
+D:\c++_research\research\C++Research\Sample-Test1\test.cpp(58,5): message : см. объявление "main"

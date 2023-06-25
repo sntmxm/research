@@ -28,27 +28,37 @@ TEST(MyTestCase, ReferenceFunctionTest) {
 }
 
 TEST(MyTestCase, MemoryLeakTest) {
+    int* initial = new int(5);
     func();
+    int* afterFunc = new int(10);
+
+    EXPECT_EQ(*initial, 5);
+    EXPECT_EQ(*afterFunc, 10);
+
+    delete initial;
+    delete afterFunc;
 
 }
 
 
 TEST_F(MyTestFixture, MyClassStackTest) {
-    MyClass objStack;
-
+    MyClass* objStack = new MyClass[5];
+    EXPECT_EQ(sizeof(MyClass), sizeof(objStack[5]));
 
 }
 
 TEST_F(MyTestFixture, MyClassHeapTest) {
-    MyClass* objHeap = new MyClass();
+    MyClass* objHeap = new MyClass[8];
+    EXPECT_EQ(sizeof(MyClass), sizeof(objHeap[8]));
 
-
-
-    delete objHeap;
+    delete[] objHeap;
 }
+
 
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
+
+
 

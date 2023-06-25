@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 
 
@@ -29,9 +30,10 @@ void func()
 int main() {
     
     MyClass objStack;  // created on stack
-
+  
     
     MyClass* objHeap = new MyClass(); // created on heap
+    
 
     delete objHeap;
 
