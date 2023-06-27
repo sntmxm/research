@@ -42,16 +42,16 @@ TEST(MyTestCase, MemoryLeakTest) {
 
 
 TEST_F(MyTestFixture, MyClassStackTest) {
-    MyClass* objStack = new MyClass[5];
-    EXPECT_EQ(sizeof(MyClass), sizeof(objStack[5]));
+    int StackArr[99999];
+    EXPECT_EQ(sizeof(StackArr), sizeof(int)*99999);
 
 }
 
 TEST_F(MyTestFixture, MyClassHeapTest) {
-    MyClass* objHeap = new MyClass[8];
-    EXPECT_EQ(sizeof(MyClass), sizeof(objHeap[8]));
+    int* HeapObj = new int[99999];
+    EXPECT_EQ(sizeof(*HeapObj), sizeof(int));
 
-    delete[] objHeap;
+    delete[] HeapObj;
 }
 
 

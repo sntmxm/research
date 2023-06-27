@@ -29,11 +29,13 @@ void func()
 
 int main() {
     
-    MyClass objStack;  // created on stack
-  
+    MyClass objStack[77];  // created on stack
+    int b = sizeof(objStack);
+    cout << "b" << b;
     
     MyClass* objHeap = new MyClass(); // created on heap
-    
+    int a = sizeof(objHeap);
+    cout << "a" << a;
 
     delete objHeap;
 
